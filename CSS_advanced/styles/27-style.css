@@ -50,7 +50,9 @@
   --button-hover-background: var(--color-primary);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -143,7 +145,8 @@ a:active {
 
 .container {
   width: 960px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -235,6 +238,10 @@ ul.row {
 }
 
 .social-link svg {
+  fill: var(--text-color);
+}
+
+.social-link > svg {
   fill: var(--text-color);
 }
 
